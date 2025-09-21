@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📜 Yujie's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div style="color: white; font-size: 26px; margin-left: -60px;">Yujie's Website</div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="life.html">Life</a> </li>
+                    <li><a href="teaching.html">Teaching</a> </li>
+                    <li><a href="research&publication.html">Research & Publications</a> </li>
+                    <li><a href="aboutme.html">About Me</a> </li>
+                    <li><a href="index.html">Home</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <main>
+        <div id="index">
+            <div class="container-index">
+                <div class="row-index">
+                    <h1>Hello World!</h1>
+                    <p>
+                        <br>
+                        Welcome to my personal website! My name is Yujie (Elena) Pu, and I am currently a Lecturer/Instructor of Imperial Chinese 
+                        History in the Department of East Asian Languages and Cultures at the University of Illinois Urbana-Champaign. My research interests 
+                        include Social and Cultural History of Late Imperial China, Global History of Medicine and Psychiatry, Legal History,  
+                        Intersection of Medicine and Religion, and Manchu Texts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--------------footer------------------->
+    <footer align="center">
+        Copyright &copy; <span id="year"></span> Yujie (Elena) Pu. All rights reserved.
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
