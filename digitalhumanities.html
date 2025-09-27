@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📜 Yujie Pu's Website - Digital Humanities</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <div class="site-logo" style="color: white; font-size: 26px; margin-left: -60px;">
+        Yujie Pu's Website – Digital Humanities
+      </div>
+      <div class="nav-links">
+        <ul>
+            <li><a href="digitalhumanities.html">Digital Humanities</a> </li>
+            <li><a href="teaching.html">Teaching</a> </li>
+            <li><a href="research&publication.html">Research & Publications</a> </li>
+            <li><a href="aboutme.html">About Me</a> </li>
+            <li><a href="index.html">Home</a> </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Digital Humanity Portfolio Section -->
+  <section class="portfolio-section" style="background-color: #f9f9f9; padding: 30px 20px 20px 20px; margin-bottom: 20px;">
+    <div style="max-width: 800px; margin: auto; text-align: center;">
+      <h2 style="font-size: 26px; margin-bottom: 16px;">Digital Humanity Portfolio</h2>
+      <p style="font-size: 18px; margin-bottom: 10px;">Explore my digital humanities projects and resources on GitHub:</p>
+      <a href="https://github.com/Yujiepu/DigitalHumanityPortfolio" target="_blank" style="font-size: 18px; color: #0077cc; text-decoration: underline;">https://github.com/Yujiepu/DigitalHumanityPortfolio</a>
+    </div>
+  </section>
+
+  <!-- Mapping Local Medical Testimony Section -->
+  <section style="background-color: #f5f5f5; padding: 32px 20px 24px 20px; margin-top: 40px; font-size: 20px; line-height: 1.6;">
+    <div style="max-width: 900px; margin: auto;">
+      <h2 style="font-size: 26px; margin-bottom: 12px; text-align: center;">Mapping Local Medical Testimony in Madness Adjudication in Eighteenth-Century China</h2>
+      <h3 style="font-size: 22px; margin-bottom: 8px;">Overview</h3>
+      <p>This pilot digital humanities project explores how local physicians participated in the adjudication of madness-related homicide cases in eighteenth-century Qing China. Drawing from over fifty criminal cases documented in the <em>Xingke tiben</em> (Routine Memorials on Criminal Matters) housed in the First Historical Archives in Beijing, the project traces the geographic distribution and legal use of unofficial medical testimony during a period often described as the “High Qing.”</p>
+      <h3 style="font-size: 22px; margin-bottom: 8px; margin-top: 20px;">Data Collection and Methodology</h3>
+      <ul style="margin-left: 24px; margin-bottom: 0;">
+        <li>Sources: Qing criminal archives (<em>Xingke tiben</em>)</li>
+        <li>Tool for Annotation: <a href="https://tropy.org/" target="_blank" style="color: #0077cc; text-decoration: underline;">Tropy</a>
+          <ul style="margin-left: 18px;">
+            <li>Tagged all references using the keyword “医” (physician/healer)</li>
+            <li>Created annotations for each case</li>
+          </ul>
+        </li>
+        <li>Structured Dataset: Includes practitioner name, location, case number, year, and medical testimony</li>
+        <li>Spatial Referencing:
+          <ul style="margin-left: 18px;">
+            <li>Location data retrieved from <a href="https://chgis.fas.harvard.edu/" target="_blank" style="color: #0077cc; text-decoration: underline;">CHGIS</a>
+            </li>
+            <li>Historical base map: <a href="https://dataverse.harvard.edu/dataverse/chgis_v6_1820" target="_blank" style="color: #0077cc; text-decoration: 
+            underline;">1820 Qing dynasty map (GBK-encoded)</a> overlaid on modern administrative map via ArcGIS</li>
+          </ul>
+        </li>
+      </ul>
+      <h3 style="font-size: 22px; margin-bottom: 8px; margin-top: 20px;">Digital Mapping</h3>
+      <p>Using ArcGIS, I visualized the spatial placement of these cases, allowing me to:</p>
+      <ul style="margin-left: 24px;">
+        <li>Trace the regional distribution of local physicians</li>
+        <li>Reveal clusters of reliance on medical testimony</li>
+        <li>Investigate how medical knowledge was incorporated into legal decision-making</li><br>
+      </ul>
+      <!-- ArcGIS Map Section (moved here) -->
+      <iframe
+        src="https://univofillinois.maps.arcgis.com/apps/mapviewer/index.html?webmap=ac814d0a909c4fd2881d9e99a5a3b844"
+        width="100%"
+        height="600"
+        style="border:1px solid #ccc;"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+      <h3 style="font-size: 22px; margin-bottom: 8px; margin-top: 20px;">What’s Next</h3>
+      <p>The next stage of this project aims to expand the dataset to include all identifiable local physicians involved in madness adjudication across the eighteenth century. This will support my broader argument:</p>
+      <blockquote style="background: #fffbe6; border-left: 4px solid #e6c200; margin: 16px 0; padding: 12px 18px; font-style: italic;">Local physicians played a crucial role in legal adjudication not only because of their expertise, but also because of systemic vacancies in official medical posts at the county level.</blockquote>
+      <p>To test this, I will:</p>
+      <ul style="margin-left: 24px;">
+        <li>Use the Basic Local Gazetteers Database (<em>Jiben fangzhi ku</em>, Airusheng)</li>
+        <li>Identify counties with vacant medical bureau posts (yiguan)</li>
+        <li>Visualize these vacancies with ArcGIS</li>
+        <li>Compare maps of medical bureau understaffing and reliance on local physicians</li>
+      </ul>
+      <p>By overlaying this vacancy map with the mapped locations of local physicians who provided legal testimony, I aim to show that these unofficial healers often stepped in to fill structural gaps in state capacity. The spatial convergence of medical bureau vacancies and reliance on unofficial testimony offers new evidence for understanding how legal and medical authority intersected in late imperial China.</p>
+    </div>
+  </section>
+
+  <!--------------footer------------------->
+    <footer align="center">
+        Copyright &copy; <span id="year"></span> Yujie (Elena) Pu. All rights reserved.
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
