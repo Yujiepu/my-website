@@ -66,6 +66,7 @@
         <li>Reveal clusters of reliance on medical testimony</li>
         <li>Investigate how medical knowledge was incorporated into legal decision-making</li><br>
       </ul>
+
       <!-- ArcGIS Map Section (moved here) -->
       <iframe
         src="https://univofillinois.maps.arcgis.com/apps/mapviewer/index.html?webmap=ac814d0a909c4fd2881d9e99a5a3b844"
@@ -93,7 +94,58 @@
       <h3 style="font-size: 22px; margin-bottom: 8px; margin-top: 20px;">Overview</h3>
       <p>The project explores the shifting discourse of feminine virtue in imperial China by analyzing the frequency and context of four key terms—貞 (chastity), 
         孝 (filial piety), 節 (restraint/virtue), and 死 (death)—in the Lienü zhuan (Biographies of Exemplary Women) sections found in thirteen Chinese dynastic 
-        histories, from the Book of the Later Han to the Draft History of Qing.</p><br>
+        histories, from the <em>Book of the Later Han</em> to the <em>Draft History of Qing</em>.</p>
+      
+      <!-- Methodology Section -->
+      <h3 style="font-size: 22px; margin-bottom: 8px; margin-top: 20px;">Methodology</h3>
+      <p style="font-size: 18px;">
+        This project analyzes the <em>Lienü Zhuan</em> (列女傳, <em>Biographies of Exemplary Women</em>) sections from thirteen official Chinese dynastic histories.
+        All texts were sourced from the <a href="https://ctext.org/" target="_blank" style="color: #0077cc; text-decoration: underline;">Chinese Text Project (CTP)</a>
+        and <a href="http://www.guoxue123.com/shibu/index.htm" target="_blank" style="color: #0077cc; text-decoration: underline;">國學導航</a>.
+      </p>
+      <p style="font-size: 18px; margin-bottom: 8px;">To prepare the corpus for text mining in Voyant Tools:</p>
+      <ul style="font-size: 18px; margin-left: 24px;">
+        <li><strong>Cleaning:</strong> Removed editorial punctuation, footnotes, and navigation markers to retain only the original classical text.</li>
+        <li><strong>Encoding:</strong> Saved all files as .txt in both UTF-8 and GBK formats to test compatibility with different tools. (UTF-8 for Voyant)</li>
+        <li><strong>Formatting:</strong> Standardized filenames (e.g., 01_LaterHan_Lienu.txt) and grouped files into a .zip archive for upload.</li>
+        <li><strong>Upload:</strong> Imported the archive into Voyant.</li>
+      </ul>
+
+      <!-- Outcome Section -->
+        <h3 style="font-size: 22px; margin-bottom: 8px; margin-top: 20px;">Outcome</h3>
+        <div class="dh-col-1">
+          <img src="images/26.png">
+        </div>
+        <div class="dh-col-1">
+          <img src="images/27.png">
+        </div>
+        <div class="dh-col-1">
+          <img src="images/28.png">
+        </div>
+        <div class="dh-col-1">
+          <img src="images/29.png">
+        </div>
+      
+      <!-- What’s Next Section -->
+        <h3 style="font-size: 22px; margin-bottom: 8px; margin-top: 20px;">What’s Next</h3>
+        <p style="font-size: 16px; line-height: 1.6;">
+          Building on the preliminary frequency analysis of virtue terms in the <em>Lienü Zhuan</em> (列女傳, <em>Biographies of Exemplary Women</em>), the next stage of this digital 
+          humanities project focuses on the differentiated deployment of the virtue xiao (孝, filial piety) across gendered social roles specifically:
+        </p>
+        <ul style="font-size: 16px; margin: 12px 0 20px 20px;">
+          <li>孝婦 (filially pious daughter-in-law)</li>
+          <li>孝女 (filial daughter)</li>
+          <li>孝妻 (filial wife)</li>
+        </ul>
+        <p style="font-size: 16px; line-height: 1.6;">
+          Using the Context tool in Voyant (<strong>the linked window below</strong>), this phase will extract and tabulate every instance of these compound terms from the <em>Lienü Zhuan</em> 
+          sections of thirteen Chinese official histories. Each occurrence will be organized by source, dynastic period, narrative function, and neighboring lexical patterns.
+        </p>
+        <p style="font-size: 16px; line-height: 1.6;">
+          This analysis aims to uncover how virtue was linguistically encoded into gendered moral expectations, offering a corpus-driven approach to understanding the narrative 
+          construction of feminine exemplarity across dynasties.
+        </p><br>
+
       <!-- Exported from Voyant Tools (voyant-tools.org).
       The iframe src attribute below uses a relative protocol to better function with both
       http and https sites, but if you're embedding this into a local web page (file protocol)
@@ -103,8 +155,8 @@
       <iframe 
         style="width: 100%; max-width: 900px; height: 600px; border:1px solid #ccc; display: block; margin: 0 auto;" 
         src="https://voyant-tools.org/tool/Contexts/?view=Contexts&query=%E5%AD%9D&corpus=11dc06b6be49dfa9a1134d91a1a61d42">
-      </iframe
-        style='width: 1865px; height: 912px;' src='https://voyant-tools.org/tool/Contexts/?view=Contexts&query=%E5%AD%9D&corpus=11dc06b6be49dfa9a1134d91a1a61d42'>
+      </iframe>
+
     </div>
   </section>
 
@@ -117,5 +169,4 @@
     </script>
 
 </body>
-
 </html>
