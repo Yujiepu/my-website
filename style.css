@@ -88,41 +88,103 @@ nav > div:first-child {
     width: 100%;
 }
 
-/* ===== INDEX PAGE ===== */
+/* ===== HOMEPAGE ===== */
 #index{
-    padding: 60px 0;
+    padding: 80px 0 100px;
     color: #2c3e50;
+    display: flex;
+    align-items: center;
 }
 
 .container-index{
     padding: 0px 10%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .row-index{
-    margin-top: 3%;
-    display:flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.homepage-content {
+    width: 100%;
+    text-align: center;
+}
+
+.homepage-name {
+    font-size: 56px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.homepage-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #FFD700;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.homepage-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.homepage-institution {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.homepage-divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #FFD700, transparent);
+    margin: 40px auto;
+}
+
+.homepage-description {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homepage-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.row-index h1{
-    margin: auto;
-    font-size: 48px;
-    text-align: center;
-    color: #2c3e50;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
+.homepage-btn {
+    padding: 14px 35px;
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    display: inline-block;
 }
 
-.row-index p{
-    margin: 10px 0 40px;
-    font-size: 17px;
-    line-height: 1.8;
-    color: #555;
-    text-align: center;
+.homepage-btn:hover {
+    background: #FFD700;
+    color: #2c3e50;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* ===== ABOUT PAGE ===== */
@@ -474,6 +536,27 @@ nav > div:first-child {
         margin: 5px 0;
     }
 
+    .homepage-name {
+        font-size: 36px;
+    }
+
+    .homepage-title {
+        font-size: 20px;
+    }
+
+    .homepage-subtitle {
+        font-size: 15px;
+    }
+
+    .homepage-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .homepage-btn {
+        width: 100%;
+    }
+
     .row-about, .row-research, .row-teaching {
         flex-direction: column;
         gap: 30px;
@@ -483,10 +566,6 @@ nav > div:first-child {
     .research-col-1, .research-col-2,
     .teaching-col-1, .teaching-col-2 {
         flex-basis: 100%;
-    }
-
-    .row-index h1 {
-        font-size: 32px;
     }
 
     .row-index p, .about-col-2 p {
