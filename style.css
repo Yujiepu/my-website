@@ -155,10 +155,27 @@ nav > div:first-child {
     font-size: 16px;
     line-height: 1.9;
     color: #555;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.homepage-contact {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.contact-email {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid #FFD700;
+    transition: all 0.3s ease;
+}
+
+.contact-email:hover {
+    color: #FFD700;
 }
 
 .homepage-links {
@@ -185,6 +202,86 @@ nav > div:first-child {
     color: #2c3e50;
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== PUBLICATIONS PAGE ===== */
+#publications-page {
+    padding: 60px 0;
+    color: #2c3e50;
+}
+
+.container-publications {
+    padding: 20px 10%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.publications-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.publications-list {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.pub-section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #FFD700;
+    display: inline-block;
+}
+
+.pub-items {
+    list-style: none;
+    padding: 0;
+}
+
+.pub-items li {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    line-height: 1.8;
+    font-size: 15px;
+    color: #555;
+}
+
+.pub-items li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.pub-items strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.pub-items em {
+    font-style: italic;
+    color: #666;
+}
+
+.pub-items a {
+    color: #2c3e50;
+    text-decoration: none;
+    word-break: break-all;
+    transition: color 0.3s ease;
+}
+
+.pub-items a:hover {
+    color: #FFD700;
 }
 
 /* ===== ABOUT PAGE ===== */
@@ -555,6 +652,23 @@ nav > div:first-child {
 
     .homepage-btn {
         width: 100%;
+    }
+
+    .publications-title {
+        font-size: 36px;
+    }
+
+    .publications-list {
+        padding: 20px;
+    }
+
+    .pub-section-title {
+        font-size: 20px;
+    }
+
+    .pub-items li {
+        font-size: 14px;
+        margin-bottom: 20px;
     }
 
     .row-about, .row-research, .row-teaching {
