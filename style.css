@@ -206,13 +206,19 @@ nav > div:first-child {
 
 /* ===== PUBLICATIONS PAGE ===== */
 #publications-page {
-    padding: 70px 0 80px;
+    position: relative;
+    padding: 72px 0 84px;
     color: #2c3e50;
-    background: linear-gradient(180deg, #f9f9f9 0%, #fcfcfa 100%);
+    background:
+        linear-gradient(rgba(248, 245, 238, 0.9), rgba(248, 245, 238, 0.94)),
+        url('images/Map-background.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
 .container-publications {
-    padding: 20px 10%;
+    padding: 0 10%;
     max-width: 960px;
     margin: 0 auto;
 }
@@ -220,28 +226,29 @@ nav > div:first-child {
 .publications-title {
     font-size: 44px;
     font-weight: 700;
-    color: #2c3e50;
+    color: #243746;
     margin-bottom: 30px;
     text-align: left;
-    letter-spacing: 0.5px;
-    border-bottom: 3px solid #FFD700;
+    letter-spacing: 0.4px;
     display: inline-block;
     padding-bottom: 10px;
+    border-bottom: 3px solid #d8b24a;
 }
 
 .research-highlight {
-    margin-bottom: 36px;
-    background: #fff;
-    padding: 32px 34px;
-    border-radius: 14px;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
-    border-left: 5px solid #d4af37;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 34px 36px;
+    border-radius: 12px;
+    box-shadow: 0 10px 28px rgba(44, 62, 80, 0.08);
+    border: 1px solid rgba(160, 142, 94, 0.14);
+    margin-bottom: 34px;
+    backdrop-filter: blur(2px);
 }
 
 .research-highlight p {
     font-size: 17px;
     line-height: 1.95;
-    color: #444;
+    color: #454545;
     margin-bottom: 18px;
     text-align: justify;
 }
@@ -251,20 +258,22 @@ nav > div:first-child {
 }
 
 .publications-list {
-    background: white;
-    padding: 42px;
-    border-radius: 14px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.92);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(44, 62, 80, 0.08);
+    border: 1px solid rgba(160, 142, 94, 0.14);
+    backdrop-filter: blur(2px);
 }
 
 .pub-section-title {
     font-size: 25px;
     font-weight: 600;
-    color: #2c3e50;
-    margin-top: 32px;
+    color: #243746;
+    margin-top: 28px;
     margin-bottom: 18px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #FFD700;
+    border-bottom: 2px solid #d8b24a;
     display: inline-block;
 }
 
@@ -280,7 +289,7 @@ nav > div:first-child {
 .pub-items li {
     margin-bottom: 24px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(36, 55, 70, 0.12);
     line-height: 1.9;
     font-size: 16px;
     color: #555;
@@ -293,7 +302,7 @@ nav > div:first-child {
 }
 
 .pub-items strong {
-    color: #2c3e50;
+    color: #243746;
     font-weight: 600;
 }
 
@@ -303,14 +312,14 @@ nav > div:first-child {
 }
 
 .pub-items a {
-    color: #2c3e50;
+    color: #2c4f68;
     text-decoration: none;
     word-break: break-word;
     transition: color 0.3s ease;
 }
 
 .pub-items a:hover {
-    color: #FFD700;
+    color: #b5891e;
 }
 
 /* ===== ABOUT PAGE ===== */
@@ -685,11 +694,12 @@ nav > div:first-child {
 
     .publications-title {
         font-size: 34px;
+        margin-bottom: 24px;
     }
 
     .research-highlight,
     .publications-list {
-        padding: 22px;
+        padding: 24px 22px;
     }
 
     .pub-section-title {
