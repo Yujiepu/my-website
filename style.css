@@ -25,13 +25,11 @@ footer {
 
 /* ===== HEADER & NAVIGATION ===== */
 .header{
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.85) 0%, rgba(52, 73, 94, 0.85) 100%), url(images/24.jpg);
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, #1f2a36 0%, #2c3e50 100%);
     position: relative;
     height: 40vh;
     width: 100%;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 24px rgba(16, 24, 32, 0.22);
 }
 
 nav{
@@ -70,14 +68,14 @@ nav > div:first-child {
 }
 
 .nav-links ul li a:hover {
-    color: #FFD700;
+    color: #d8b24a;
 }
 
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background: #FFD700;
+    background: #d8b24a;
     display: block;
     margin: auto;
     transition: width 0.5s ease;
@@ -206,19 +204,13 @@ nav > div:first-child {
 
 /* ===== PUBLICATIONS PAGE ===== */
 #publications-page {
-    position: relative;
-    padding: 72px 0 84px;
+    padding: 70px 0 80px;
     color: #2c3e50;
-    background:
-        linear-gradient(rgba(248, 245, 238, 0.9), rgba(248, 245, 238, 0.94)),
-        url('images/Map-background.png');
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, #f9f9f9 0%, #fcfcfa 100%);
 }
 
 .container-publications {
-    padding: 0 10%;
+    padding: 20px 10%;
     max-width: 960px;
     margin: 0 auto;
 }
@@ -226,29 +218,28 @@ nav > div:first-child {
 .publications-title {
     font-size: 44px;
     font-weight: 700;
-    color: #243746;
+    color: #2c3e50;
     margin-bottom: 30px;
     text-align: left;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.5px;
+    border-bottom: 3px solid #FFD700;
     display: inline-block;
     padding-bottom: 10px;
-    border-bottom: 3px solid #d8b24a;
 }
 
 .research-highlight {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 34px 36px;
-    border-radius: 12px;
-    box-shadow: 0 10px 28px rgba(44, 62, 80, 0.08);
-    border: 1px solid rgba(160, 142, 94, 0.14);
-    margin-bottom: 34px;
-    backdrop-filter: blur(2px);
+    margin-bottom: 36px;
+    background: #fff;
+    padding: 32px 34px;
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #d4af37;
 }
 
 .research-highlight p {
     font-size: 17px;
     line-height: 1.95;
-    color: #454545;
+    color: #444;
     margin-bottom: 18px;
     text-align: justify;
 }
@@ -258,22 +249,20 @@ nav > div:first-child {
 }
 
 .publications-list {
-    background: rgba(255, 255, 255, 0.92);
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(44, 62, 80, 0.08);
-    border: 1px solid rgba(160, 142, 94, 0.14);
-    backdrop-filter: blur(2px);
+    background: white;
+    padding: 42px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .pub-section-title {
     font-size: 25px;
     font-weight: 600;
-    color: #243746;
-    margin-top: 28px;
+    color: #2c3e50;
+    margin-top: 32px;
     margin-bottom: 18px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #d8b24a;
+    border-bottom: 2px solid #FFD700;
     display: inline-block;
 }
 
@@ -289,7 +278,7 @@ nav > div:first-child {
 .pub-items li {
     margin-bottom: 24px;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(36, 55, 70, 0.12);
+    border-bottom: 1px solid #eee;
     line-height: 1.9;
     font-size: 16px;
     color: #555;
@@ -302,7 +291,7 @@ nav > div:first-child {
 }
 
 .pub-items strong {
-    color: #243746;
+    color: #2c3e50;
     font-weight: 600;
 }
 
@@ -312,14 +301,14 @@ nav > div:first-child {
 }
 
 .pub-items a {
-    color: #2c4f68;
+    color: #2c3e50;
     text-decoration: none;
     word-break: break-word;
     transition: color 0.3s ease;
 }
 
 .pub-items a:hover {
-    color: #b5891e;
+    color: #FFD700;
 }
 
 /* ===== ABOUT PAGE ===== */
@@ -694,12 +683,11 @@ nav > div:first-child {
 
     .publications-title {
         font-size: 34px;
-        margin-bottom: 24px;
     }
 
     .research-highlight,
     .publications-list {
-        padding: 24px 22px;
+        padding: 22px;
     }
 
     .pub-section-title {
