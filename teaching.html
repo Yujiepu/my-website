@@ -12,7 +12,7 @@
 
     .teaching-hero {
       background: linear-gradient(135deg, #1f2a36 0%, #2c3e50 60%, #3d5166 100%);
-      padding: 70px 10% 60px;
+      padding: 40px 10%;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -36,18 +36,9 @@
       border-radius: 50%;
     }
 
-    .teaching-hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 48px;
-      color: #fff;
-      margin-bottom: 14px;
-      letter-spacing: 1px;
-      position: relative; z-index: 1;
-    }
-
     .teaching-hero .hero-subtitle {
       font-family: 'Lato', sans-serif;
-      font-size: 18px;
+      font-size: 16px;
       color: #d8b24a;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -58,7 +49,7 @@
       width: 70px;
       height: 3px;
       background: linear-gradient(90deg, transparent, #d8b24a, transparent);
-      margin: 22px auto 0;
+      margin: 16px auto 0;
       position: relative; z-index: 1;
     }
 
@@ -243,7 +234,6 @@
       margin-bottom: 6px;
     }
 
-    /* sub-items a, b, c, d, e */
     .sub-parts {
       display: flex;
       flex-direction: column;
@@ -331,30 +321,64 @@
       border-color: rgba(216,178,74,0.5);
     }
 
-    /* ===== AWARD ===== */
+    /* ===== AWARDS ===== */
     .award-bar {
       background: #fff;
-      padding: 28px 10%;
-      display: flex;
-      align-items: center;
-      gap: 18px;
+      padding: 40px 10%;
       border-top: 1px solid #eee;
     }
 
+    .award-bar-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #d8b24a;
+      display: inline-block;
+    }
+
+    .award-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 18px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .award-item:last-child {
+      border-bottom: none;
+    }
+
     .award-icon {
-      font-size: 32px;
+      font-size: 24px;
       flex-shrink: 0;
+      margin-top: 3px;
     }
 
     .award-text {
       font-family: 'Lato', sans-serif;
       font-size: 16px;
       color: #555;
+      line-height: 1.6;
     }
 
     .award-text strong {
       color: #2c3e50;
-      font-size: 17px;
+      font-size: 16px;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .award-year {
+      font-family: 'Lato', sans-serif;
+      font-size: 12px;
+      color: #d8b24a;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      display: block;
     }
 
     /* ===== RESPONSIVE ===== */
@@ -363,14 +387,14 @@
       .philosophy-images { flex: unset; width: 100%; flex-direction: row; flex-wrap: wrap; }
       .philosophy-images img { width: calc(50% - 10px); }
       .courses-grid { grid-template-columns: 1fr; }
-      .teaching-hero h1 { font-size: 34px; }
       .parts-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 600px) {
       .philosophy-images img { width: 100%; }
-      .teaching-hero { padding: 50px 6% 40px; }
+      .teaching-hero { padding: 30px 6%; }
       .philosophy-section, .project-section, .courses-section { padding: 50px 6%; }
+      .award-bar { padding: 32px 6%; }
     }
   </style>
 </head>
@@ -394,10 +418,9 @@
     </nav>
   </section>
 
-  <!-- HERO -->
+  <!-- HERO (subtitle only, no big title) -->
   <div class="teaching-hero">
     <p class="hero-subtitle">University of Illinois Urbana-Champaign</p>
-    <h1>Teaching Philosophy &amp; Practice</h1>
     <div class="hero-divider"></div>
   </div>
 
@@ -437,7 +460,7 @@
       collaboration, historical interpretation, and public presentation.
     </div>
 
-    <!-- Part I — Project Proposal with sub-items -->
+    <!-- Part I -->
     <div style="margin-bottom: 30px;">
       <div class="part-card" style="max-width: 100%;">
         <span class="part-badge">Part I</span>
@@ -520,12 +543,24 @@
     </div>
   </section>
 
-  <!-- AWARD -->
+  <!-- AWARDS -->
   <div class="award-bar">
-    <div class="award-icon">🏆</div>
-    <div class="award-text">
-      <strong>Teaching Award</strong><br>
-      2026 Facilitating Learning Excellence Award, University of Illinois Urbana-Champaign
+    <div class="award-bar-title">Teaching Awards</div>
+    <div class="award-item">
+      <div class="award-icon">🏆</div>
+      <div class="award-text">
+        <span class="award-year">2026</span>
+        <strong>Facilitating Learning Excellence Award</strong>
+        University of Illinois Urbana-Champaign
+      </div>
+    </div>
+    <div class="award-item">
+      <div class="award-icon">⭐</div>
+      <div class="award-text">
+        <span class="award-year">2017 – 2025 &nbsp;·&nbsp; 8 times</span>
+        <strong>Award for Teachers Ranked as Excellent by Their Students</strong>
+        University of Illinois Urbana-Champaign
+      </div>
     </div>
   </div>
 
