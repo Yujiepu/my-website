@@ -6,8 +6,377 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>📜 Yujie Pu's Website - Teaching</title>
   <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== TEACHING PAGE REDESIGN ===== */
+
+    .teaching-hero {
+      background: linear-gradient(135deg, #1f2a36 0%, #2c3e50 60%, #3d5166 100%);
+      padding: 70px 10% 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .teaching-hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; left: -60px;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(216,178,74,0.18) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .teaching-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; right: -80px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(216,178,74,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .teaching-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      color: #fff;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+      position: relative; z-index: 1;
+    }
+
+    .teaching-hero .hero-subtitle {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      color: #d8b24a;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      position: relative; z-index: 1;
+    }
+
+    .hero-divider {
+      width: 70px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #d8b24a, transparent);
+      margin: 22px auto 0;
+      position: relative; z-index: 1;
+    }
+
+    /* ===== PHILOSOPHY SECTION ===== */
+    .philosophy-section {
+      background: #f4f1eb;
+      padding: 70px 10%;
+    }
+
+    .section-label {
+      font-family: 'Lato', sans-serif;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #d8b24a;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      color: #2c3e50;
+      margin-bottom: 36px;
+      padding-bottom: 16px;
+      border-bottom: 3px solid #d8b24a;
+      display: inline-block;
+    }
+
+    .philosophy-grid {
+      display: flex;
+      gap: 50px;
+      align-items: flex-start;
+    }
+
+    .philosophy-text {
+      flex: 1;
+    }
+
+    .philosophy-quote {
+      background: #2c3e50;
+      border-left: 5px solid #d8b24a;
+      border-radius: 0 12px 12px 0;
+      padding: 32px 36px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .philosophy-quote::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 80px;
+      color: #d8b24a;
+      opacity: 0.4;
+      position: absolute;
+      top: -10px; left: 16px;
+      line-height: 1;
+    }
+
+    .philosophy-quote p {
+      font-family: 'Lato', sans-serif;
+      font-size: 17px;
+      line-height: 1.9;
+      color: #e8e0d0;
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .philosophy-body {
+      font-family: 'Lato', sans-serif;
+      font-size: 16.5px;
+      line-height: 1.95;
+      color: #444;
+      text-align: justify;
+    }
+
+    .philosophy-images {
+      flex: 0 0 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .philosophy-images img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .philosophy-images img:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    .img-caption {
+      font-family: 'Lato', sans-serif;
+      font-size: 13px;
+      color: #888;
+      text-align: center;
+      line-height: 1.5;
+      margin-top: -10px;
+    }
+
+    /* ===== REACTING TO THE PAST ===== */
+    .project-section {
+      background: #fff;
+      padding: 70px 10%;
+    }
+
+    .project-intro {
+      font-family: 'Lato', sans-serif;
+      font-size: 17px;
+      line-height: 1.9;
+      color: #555;
+      max-width: 800px;
+      margin-bottom: 50px;
+    }
+
+    .project-intro strong {
+      font-size: 22px;
+      color: #2c3e50;
+      display: block;
+      margin-bottom: 8px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .parts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 20px;
+    }
+
+    .part-card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(44,62,80,0.10);
+      padding: 30px 28px;
+      border-top: 4px solid #d8b24a;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .part-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(44,62,80,0.16);
+    }
+
+    .part-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #2c3e50, #3d5166);
+      color: #d8b24a;
+      font-family: 'Playfair Display', serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+
+    .part-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 19px;
+      color: #2c3e50;
+      margin-bottom: 12px;
+    }
+
+    .part-card p, .part-card li {
+      font-family: 'Lato', sans-serif;
+      font-size: 15.5px;
+      line-height: 1.85;
+      color: #555;
+    }
+
+    .part-card ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .part-card li {
+      margin-bottom: 6px;
+    }
+
+    /* sub-items a, b, c, d, e */
+    .sub-parts {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 10px;
+    }
+
+    .sub-part-item {
+      background: #f8f6f1;
+      border-left: 3px solid #d8b24a;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+    }
+
+    .sub-part-item strong {
+      font-family: 'Playfair Display', serif;
+      color: #2c3e50;
+      font-size: 15px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .sub-part-item p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    /* ===== COURSES SECTION ===== */
+    .courses-section {
+      background: linear-gradient(160deg, #1f2a36 0%, #2c3e50 100%);
+      padding: 70px 10%;
+    }
+
+    .courses-section .section-title {
+      color: #fff;
+      border-bottom-color: #d8b24a;
+    }
+
+    .courses-section .section-label {
+      color: #d8b24a;
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 10px;
+    }
+
+    .course-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(216,178,74,0.25);
+      border-radius: 16px;
+      padding: 32px 30px;
+      backdrop-filter: blur(4px);
+    }
+
+    .course-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      color: #d8b24a;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(216,178,74,0.3);
+    }
+
+    .course-tag {
+      display: inline-block;
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      color: #e8e0d0;
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 6px;
+      padding: 7px 14px;
+      margin: 5px 5px 5px 0;
+      line-height: 1.4;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .course-tag:hover {
+      background: rgba(216,178,74,0.18);
+      border-color: rgba(216,178,74,0.5);
+    }
+
+    /* ===== AWARD ===== */
+    .award-bar {
+      background: #fff;
+      padding: 28px 10%;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      border-top: 1px solid #eee;
+    }
+
+    .award-icon {
+      font-size: 32px;
+      flex-shrink: 0;
+    }
+
+    .award-text {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .award-text strong {
+      color: #2c3e50;
+      font-size: 17px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .philosophy-grid { flex-direction: column; }
+      .philosophy-images { flex: unset; width: 100%; flex-direction: row; flex-wrap: wrap; }
+      .philosophy-images img { width: calc(50% - 10px); }
+      .courses-grid { grid-template-columns: 1fr; }
+      .teaching-hero h1 { font-size: 34px; }
+      .parts-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      .philosophy-images img { width: 100%; }
+      .teaching-hero { padding: 50px 6% 40px; }
+      .philosophy-section, .project-section, .courses-section { padding: 50px 6%; }
+    }
+  </style>
 </head>
 <body>
+
+  <!-- NAV -->
   <section class="header">
     <nav>
       <div class="site-logo" style="color: white; font-size: 26px; margin-left: -60px;">
@@ -15,127 +384,158 @@
       </div>
       <div class="nav-links">
         <ul>
-            <li><a href="digitalhumanities.html">Digital Humanities</a> </li>
-            <li><a href="teaching.html">Teaching</a> </li>
-            <li><a href="research&publication.html">Research & Publications</a> </li>
-            <li><a href="aboutme.html">About Me</a> </li>
-            <li><a href="index.html">Home</a> </li>
+          <li><a href="digitalhumanities.html">Digital Humanities</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="research&publication.html">Research & Publications</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="index.html">Home</a></li>
         </ul>
       </div>
     </nav>
   </section>
 
-  <!-- teaching summary -->
-  <div id="teaching" style="margin-bottom: 40px;">
-    <div class="container-teaching" style="margin-bottom: 0;">
-      <div class="row-teaching" style="margin-bottom: 0; align-items: flex-start;">
-        <div class="teaching-col-1">
-          <p style="line-height:2.0; font-size: 20px">
-            I have developed a pedagogical approach that weaves global history with a student-centered teaching philosophy. I view learning as an 
-            empowering process in which students actively shape their own intellectual journeys. In my survey of East Asia, I assign a "Reacting to 
-            the Past" project to promote active learning. In another course, "History of Medicine in China," students analyze how gender roles, norms, 
-            and experiences were constructed and contested in medical history. These activities equip students with research and rhetorical skills to 
-            navigate both historical knowledge and contemporary complexities.
-            <br><br>
-            <strong style="font-size: 1.5em;">Reacting to the Past Project</strong><br>
-            <strong>Engaging with East Asian History through Performance</strong><br>
-            This creative group project invites students to research, script, and perform a historical event from East Asian history. By embodying key historical 
-            figures and debates, students will explore the complexity of the past while developing skills in collaboration, historical interpretation, and public 
-            presentation.<br><br>
-            <strong>Part I. Project Proposal</strong><br>
-            Each group must submit a written proposal that includes the following components:<br>
-            <ul style="margin-top:10px; margin-bottom:10px; line-height:2.0; font-size: 20px;">
-              <div style="margin-bottom:8px; margin-bottom:10px; line-height:2.0; font-size: 20px;"><strong>a. Topic</strong><br> 
-                Choose a topic that all group members are genuinely interested in exploring. It should involve a historical event, debate, or transformation relevant 
-                to East Asian history.
-              </div>
-              <div style="margin-bottom:8px; margin-bottom:10px; line-height:2.0; font-size: 20px;"><strong>b. Introduction and Significance (100 words)</strong><br>
-                Briefly explain why your group chose this topic. Why is it historically important or meaningful today?
-              </div>
-              <div style="margin-bottom:8px; margin-bottom:10px; line-height:2.0; font-size: 20px;"><strong>c. Preliminary Research</strong><br>
-                Clearly identify the historical time, location, and key figures involved. Include at least one historical interpretation of the event based on 
-                scholarly research.
-              </div> 
-              <div style="margin-bottom:8px; margin-bottom:10px; line-height:2.0; font-size: 20px;"><strong>d. Scripts for the Show</strong><br>
-                This is the core of your project.<br>
-                &bull; The narrator must open the performance with a clear introduction and close it with a statement about the historical significance of the event.<br>
-                &bull; Each performer (2–4 people) must write and deliver a script for a historical figure.<br>
-                &bull; Together, your group's scripts should form a complete and cohesive narrative that brings the historical moment to life.
-              </div>
-              <div style="margin-bottom:8px; margin-bottom:10px; line-height:2.0; font-size: 20px;"><strong>e. References</strong><br>
-                Include at least:<br>
-                &bull; One primary source relevant to your topic<br>
-                &bull; Two secondary source (e.g., scholarly books or journal articles)
-              </div><br> 
-            </ul>
-            <div style="line-height:2.0; margin-bottom:10px; font-size: 20px;">
-              <strong>Part II. Video Advertisement (30 seconds)</strong><br>
-              Create a short, engaging video to promote your performance. Think of it as a movie trailer for your show!<br>
-              After watching all submissions, your classmates will vote on their Top 3 Favorite Videos. Each member of the winning groups will receive 1 extra credit 
-              point.<br><br> 
-              <strong>Part III. Rehearsal Week</strong><br>
-              Rehearsals will take place the week before the final performance. A sign-up form for rehearsal times will be shared before Thanksgiving Break.<br><br>
-              <strong>Part IV. The Show</strong><br>
-              The final week of the semester is Showtime!<br>
-              Groups will perform their historical scenes live or via video submission. A performance schedule sign-up will also be shared in advance.<br><br>
-              <strong>Part V. Peer Assessment of Performance</strong><br>
-              After the final performances, each student will complete an anonymous peer assessment. You will evaluate your group members' contributions, collaboration, 
-              and overall effort. This assessment is due by the end of the last week of the semester.<br>
-            </div>
-          </p>
-        </div>
-        <div class="teaching-col-2">
-          <img src="images/22.png" alt="Teaching Illustration">
-          <p style="line-height:1.5; text-align:center;">This historical painting appears at the beginning of my course syllabus, 
-            "History of Medicine in China."</p>
-
-          <figure style="margin-top: 28px;">
-            <img src="images/Yujie_Course Flyer_FA26 (1).jpg" alt="Course Flyer for Mind, Body and Medicine in East Asia">
-          </figure>
-        </div>
-      </div>
-    </div>
+  <!-- HERO -->
+  <div class="teaching-hero">
+    <p class="hero-subtitle">University of Illinois Urbana-Champaign</p>
+    <h1>Teaching Philosophy &amp; Practice</h1>
+    <div class="hero-divider"></div>
   </div>
 
-  <!-- Courses Taught section -->
-  <section class="courses-taught" style="background-color: #f9f9f9; padding: 20px 20px 40px 20px;">
-    <div class="container-courses" style="max-width: 800px; margin: auto;">
-      <h2 style="text-align: center; font-size: 28px; margin-bottom: 30px;">📘 Courses Taught</h2>
-      <div class="course-level" style="margin-bottom: 25px;">
-        <h3 style="font-size: 22px; color: #333;">Lower-Level Courses</h3>
-        <ul style="line-height: 1.8;">
-          <li style="margin-top:18px;">Contemporary East Asia (Spring 2026)</li>
-          <li>East Asian Civilization (Fall 2024, Fall 2025)</li>
-          <li>Chinese Civilization (Spring 2026)</li>
-          <li>Traditional China (ancient-1644) (Spring 2025)</li>
-          <li>Chinese Thought and Culture in Global Contexts (Fall 2024)</li>
-        </ul>
+  <!-- PHILOSOPHY -->
+  <section class="philosophy-section">
+    <p class="section-label">My Approach</p>
+    <h2 class="section-title">Teaching Philosophy</h2>
+    <div class="philosophy-grid">
+      <div class="philosophy-text">
+        <div class="philosophy-quote">
+          <p>I view learning as an empowering process in which students actively shape their own intellectual journeys.</p>
+        </div>
+        <p class="philosophy-body">
+          I have developed a pedagogical approach that weaves global history with a student-centered teaching philosophy.
+          In my survey of East Asia, I assign a "Reacting to the Past" project to promote active learning. In another course,
+          "History of Medicine in China," students analyze how gender roles, norms, and experiences were constructed and contested
+          in medical history. These activities equip students with research and rhetorical skills to navigate both historical
+          knowledge and contemporary complexities.
+        </p>
       </div>
-      <div class="course-level">
-        <h3 style="font-size: 22px; color: #333;">Upper-Level Courses</h3>
-        <ul style="line-height: 1.8;">
-          <li style="margin-top:18px;">China Under the Qing Dynasty (Spring 2025, Spring 2026)</li>
-          <li>Chinese Medicine and Healing (Fall 2025)</li>
-          <li>History of Medicine in China (Spring 2025)</li>
-        </ul>
+      <div class="philosophy-images">
+        <img src="images/22.png" alt="Historical painting from History of Medicine in China">
+        <p class="img-caption">This historical painting appears at the beginning of my course syllabus, "History of Medicine in China."</p>
+        <img src="images/Yujie_Course Flyer_FA26 (1).jpg" alt="Course Flyer for Mind, Body and Medicine in East Asia">
       </div>
-
-      <!-- Teaching Award -->
-      <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; color: #555; font-size: 17px;">
-        <p style="margin: 0;">🏆 <strong>Teaching Award</strong><br>
-        2026 Facilitating Learning Excellence Award, University of Illinois Urbana-Champaign</p>
-      </div>
-
     </div>
   </section>
 
-    <!--------------footer------------------->
-    <footer align="center">
-        Copyright &copy; <span id="year"></span> Yujie (Elena) Pu. All rights reserved.
-    </footer>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+  <!-- REACTING TO THE PAST -->
+  <section class="project-section">
+    <p class="section-label">Signature Assignment</p>
+    <h2 class="section-title">Reacting to the Past Project</h2>
+    <div class="project-intro">
+      <strong>Engaging with East Asian History through Performance</strong>
+      This creative group project invites students to research, script, and perform a historical event from East Asian history.
+      By embodying key historical figures and debates, students explore the complexity of the past while developing skills in
+      collaboration, historical interpretation, and public presentation.
+    </div>
+
+    <!-- Part I — Project Proposal with sub-items -->
+    <div style="margin-bottom: 30px;">
+      <div class="part-card" style="max-width: 100%;">
+        <span class="part-badge">Part I</span>
+        <h3>Project Proposal</h3>
+        <p style="margin-bottom: 18px;">Each group must submit a written proposal that includes the following components:</p>
+        <div class="sub-parts">
+          <div class="sub-part-item">
+            <strong>a. Topic</strong>
+            <p>Choose a topic that all group members are genuinely interested in exploring. It should involve a historical event, debate, or transformation relevant to East Asian history.</p>
+          </div>
+          <div class="sub-part-item">
+            <strong>b. Introduction and Significance <span style="font-weight:400; color:#888;">(100 words)</span></strong>
+            <p>Briefly explain why your group chose this topic. Why is it historically important or meaningful today?</p>
+          </div>
+          <div class="sub-part-item">
+            <strong>c. Preliminary Research</strong>
+            <p>Clearly identify the historical time, location, and key figures involved. Include at least one historical interpretation of the event based on scholarly research.</p>
+          </div>
+          <div class="sub-part-item">
+            <strong>d. Scripts for the Show</strong>
+            <p>This is the core of your project.</p>
+            <ul>
+              <li>The narrator must open the performance with a clear introduction and close it with a statement about the historical significance of the event.</li>
+              <li>Each performer (2–4 people) must write and deliver a script for a historical figure.</li>
+              <li>Together, your group's scripts should form a complete and cohesive narrative that brings the historical moment to life.</li>
+            </ul>
+          </div>
+          <div class="sub-part-item">
+            <strong>e. References</strong>
+            <p>Include at least: one primary source relevant to your topic, and two secondary sources (e.g., scholarly books or journal articles).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Parts II–V grid -->
+    <div class="parts-grid">
+      <div class="part-card">
+        <span class="part-badge">Part II</span>
+        <h3>Video Advertisement <span style="font-size:14px; color:#888; font-family:'Lato',sans-serif;">(30 seconds)</span></h3>
+        <p>Create a short, engaging video to promote your performance — think of it as a movie trailer for your show! After watching all submissions, classmates will vote on their Top 3 Favorite Videos. Each member of the winning groups receives <strong>1 extra credit point</strong>.</p>
+      </div>
+      <div class="part-card">
+        <span class="part-badge">Part III</span>
+        <h3>Rehearsal Week</h3>
+        <p>Rehearsals will take place the week before the final performance. A sign-up form for rehearsal times will be shared before Thanksgiving Break.</p>
+      </div>
+      <div class="part-card">
+        <span class="part-badge">Part IV</span>
+        <h3>The Show 🎭</h3>
+        <p>The final week of the semester is <strong>Showtime!</strong> Groups will perform their historical scenes live or via video submission. A performance schedule sign-up will be shared in advance.</p>
+      </div>
+      <div class="part-card">
+        <span class="part-badge">Part V</span>
+        <h3>Peer Assessment</h3>
+        <p>After the final performances, each student completes an anonymous peer assessment — evaluating group members' contributions, collaboration, and overall effort. Due by the end of the last week of the semester.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES TAUGHT -->
+  <section class="courses-section">
+    <p class="section-label">Curriculum</p>
+    <h2 class="section-title">Courses Taught</h2>
+    <div class="courses-grid">
+      <div class="course-card">
+        <h3>📖 Lower-Level Courses</h3>
+        <span class="course-tag">Contemporary East Asia (Spring 2026)</span>
+        <span class="course-tag">East Asian Civilization (Fall 2024, Fall 2025)</span>
+        <span class="course-tag">Chinese Civilization (Spring 2026)</span>
+        <span class="course-tag">Traditional China (ancient–1644) (Spring 2025)</span>
+        <span class="course-tag">Chinese Thought and Culture in Global Contexts (Fall 2024)</span>
+      </div>
+      <div class="course-card">
+        <h3>🎓 Upper-Level Courses</h3>
+        <span class="course-tag">China Under the Qing Dynasty (Spring 2025, Spring 2026)</span>
+        <span class="course-tag">Chinese Medicine and Healing (Fall 2025)</span>
+        <span class="course-tag">History of Medicine in China (Spring 2025)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARD -->
+  <div class="award-bar">
+    <div class="award-icon">🏆</div>
+    <div class="award-text">
+      <strong>Teaching Award</strong><br>
+      2026 Facilitating Learning Excellence Award, University of Illinois Urbana-Champaign
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer align="center">
+    Copyright &copy; <span id="year"></span> Yujie (Elena) Pu. All rights reserved.
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
